@@ -1,5 +1,5 @@
 
-#Projeto - Front-end com Next.js
+# Projeto - Front-end com Next.js
 
 Acesso à Produção
 
@@ -10,7 +10,7 @@ Usuário: admin
 Senha: 123456
 
 
-#Rodando o Projeto Localmente
+# Rodando o Projeto Localmente
 
 Pré-requisitos
 
@@ -18,7 +18,7 @@ Node.js versão 20.11
 
 Yarn instalado (recomendado)
 
-#Instalação e Configuração
+# Instalação e Configuração
 
 git clone <URL_DO_REPOSITORIO>
 
@@ -30,7 +30,7 @@ Inicie o projeto
 
 yarn dev / yarn start
 
-#Acesse no navegador
+# Acesse no navegador
 
 http://localhost:3033/
 
