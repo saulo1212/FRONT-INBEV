@@ -1,0 +1,11 @@
+/* scrollbar */
+@import 'simplebar-react/dist/simplebar.min.css';
+
+.my-swal {
+  z-index: 6000 !important;
+}
+
+
+.noBorderRadius {
+  border-radius: 0 !important;
+}
