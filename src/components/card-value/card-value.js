@@ -5,8 +5,6 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
 
-import { fFixedAmountNumber } from 'src/utils/format-number';
-
 import { bgGradient } from 'src/theme/css';
 
 // ----------------------------------------------------------------------
@@ -34,7 +32,7 @@ export default function CardValue({ title, total, icon, color = 'primary', sx, .
     >
       {icon && <Box sx={{ width: 64, height: 64, mb: 1 }}>{icon}</Box>}
 
-      <Typography variant="h3">{`R$ ${fFixedAmountNumber(total)}`}</Typography>
+     
 
       <Typography variant="subtitle2" sx={{ opacity: 0.64 }}>
         {title}

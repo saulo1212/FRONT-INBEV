@@ -2,14 +2,16 @@
 
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+
 import {
-  FormControlLabel,
-  Checkbox,
   Grid,
+  Checkbox,
+  TextField,
   IconButton,
   InputAdornment,
-  TextField,
+  FormControlLabel,
 } from '@mui/material';
+
 import Iconify from 'src/components/iconify/iconify';
 
 export default function Form({ form, onChangeForm, selectedId }) {

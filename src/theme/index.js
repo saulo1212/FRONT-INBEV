@@ -3,18 +3,17 @@
 import { useMemo } from 'react';
 import merge from 'lodash/merge';
 import PropTypes from 'prop-types';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { createTheme as createThemeTable } from 'react-data-table-component';
 
 import CssBaseline from '@mui/material/CssBaseline';
-import { createTheme as createThemeTable } from 'react-data-table-component';
 import { createTheme, ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { useSettingsContext } from 'src/components/settings';
 
+import { useSettingsContext } from 'src/components/settings';
 
 import { palette } from './palette';
 import { shadows } from './shadows';
 import { typography } from './typography';
-
 import RTL from './options/right-to-left';
 import { customShadows } from './custom-shadows';
 import { componentsOverrides } from './overrides';

@@ -1,8 +1,8 @@
 'use client';
 
 import PropTypes from 'prop-types';
-
 import { ptBR as ptBRAdapter } from 'date-fns/locale';
+
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider as MuiLocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 

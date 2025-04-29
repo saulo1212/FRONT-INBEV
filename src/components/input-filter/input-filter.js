@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { ClearButton, TextField } from './styles';
+import { TextField, ClearButton } from './styles';
 
 const InputFilter = ({ filterText, onFilter, onClear }) => (
   <>

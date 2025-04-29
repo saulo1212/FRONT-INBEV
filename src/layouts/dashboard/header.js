@@ -15,7 +15,6 @@ import Logo from 'src/components/logo';
 import SvgColor from 'src/components/svg-color';
 import { useSettingsContext } from 'src/components/settings';
 
-
 import { NAV, HEADER } from '../config-layout';
 import LogoutButtom from '../common/logout-buttom';
 import SettingsButton from '../common/settings-button';
@@ -39,7 +38,7 @@ export default function Header({ onOpenNav }) {
 
   const renderContent = (
     <>
-      {lgUp && isNavHorizontal && <Logo sx={{ mr: 2.5, width: '10%' }} logoSrc={''} />}
+      {lgUp && isNavHorizontal && <Logo sx={{ mr: 2.5, width: '10%' }} logoSrc='' />}
 
       {!lgUp && (
         <IconButton onClick={onOpenNav}>

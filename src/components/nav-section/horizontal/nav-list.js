@@ -56,7 +56,7 @@ export default function NavList({ data, depth, slotProps }) {
         currentRole={slotProps?.currentRole}
         //
        
-        className={'active'}
+        className="active"
         sx={depth === 1 ? slotProps?.rootItem : slotProps?.subItem}
       />
 

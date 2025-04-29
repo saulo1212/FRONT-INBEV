@@ -1,17 +1,21 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { fDate } from 'src/utils/format-time';
-import { apiFetchGet, logout, apiDeleteUser, apiChangeUserSituation } from 'src/utils/requests';
 import DataTable from 'react-data-table-component';
-import { Button, Card, Container, IconButton, Switch, Tooltip } from '@mui/material';
-import ModalForm from '../modal-form';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+
+import { Card, Button, Switch, Tooltip, Container, IconButton } from '@mui/material';
+
+import { Alert } from 'src/utils/alert';
+import { fDate } from 'src/utils/format-time';
+import { logout, apiFetchGet, apiDeleteUser, apiChangeUserSituation } from 'src/utils/requests';
+
 import Iconify from 'src/components/iconify';
 import Progress from 'src/components/progress';
 import { useSettingsContext } from 'src/components/settings';
 import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
-import { Alert } from 'src/utils/alert';
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+
+import ModalForm from '../modal-form';
 
 export default function UserListView() {
   const settings = useSettingsContext();

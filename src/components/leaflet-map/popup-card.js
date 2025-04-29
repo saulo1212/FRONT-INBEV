@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { unixToDate } from 'src/utils/format-time';
 
 import { Typography } from '@mui/material';
 
@@ -17,10 +16,7 @@ export default function PopUpCard({ gpsData, vehiclePlate, communicationUnix, na
           Ultima Comunicação / GPS:
         </Typography>
 
-        <p style={{ marginTop: '2px' }}>{`${unixToDate(
-          gpsData.unixTimestamp,
-          'dd/MM/yyyy HH:mm:ss',
-        )} / ${unixToDate(communicationUnix, 'dd/MM/yyyy HH:mm:ss')}`}</p>
+        
       </div>
 
       <div>

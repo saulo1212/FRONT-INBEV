@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
+import { NumericFormat } from 'react-number-format';
 
 import { TextField } from '@mui/material';
-import { NumericFormat } from 'react-number-format';
 
 const CustomTextField = (props) => <TextField {...props} fullWidth variant="outlined" />;
 

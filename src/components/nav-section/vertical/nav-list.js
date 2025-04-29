@@ -1,38 +1,17 @@
 import PropTypes from 'prop-types';
-import { useState, useEffect, useCallback } from 'react';
 
 import Collapse from '@mui/material/Collapse';
-
-import { usePathname } from 'src/routes/hooks';
 
 import NavItem from './nav-item';
 
 
 export default function NavList({ data, depth, slotProps }) {
-  const pathname = usePathname();
 
-  useEffect(() => {
-    if (!active) {
-      handleCloseMenu();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pathname]);
-
-  const handleToggleMenu = useCallback(() => {
-    if (data.children) {
-      setOpenMenu((prev) => !prev);
-    }
-  }, [data.children]);
-
-  const handleCloseMenu = useCallback(() => {
-    setOpenMenu(false);
-  }, []);
+ 
 
   return (
     <>
       <NavItem
-        open={openMenu}
-        onClick={handleToggleMenu}
         //
         title={data.title}
         path={data.path}
@@ -47,8 +26,6 @@ export default function NavList({ data, depth, slotProps }) {
         externalLink={data.path.includes('http')}
         currentRole={slotProps?.currentRole}
         //
-        active={active}
-        className={active ? 'active' : ''}
         sx={{
           mb: `${slotProps?.gap}px`,
           ...(depth === 1 ? slotProps?.rootItem : slotProps?.subItem),
@@ -56,7 +33,7 @@ export default function NavList({ data, depth, slotProps }) {
       />
 
       {!!data.children && (
-        <Collapse in={openMenu} unmountOnExit>
+        <Collapse  unmountOnExit>
           <NavSubList data={data.children} depth={depth} slotProps={slotProps} />
         </Collapse>
       )}

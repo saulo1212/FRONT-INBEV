@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
-import { Button, Grid } from '@mui/material';
+import { Grid, Button } from '@mui/material';
+
 import Iconify from '../iconify';
 
 // ----------------------------------------------------------------------

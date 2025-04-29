@@ -1,13 +1,13 @@
 'use client';
 
-import api from '../../../config/api';
 import PropTypes from 'prop-types';
 import { useMemo, useEffect, useReducer, useCallback } from 'react';
 
 import axios, { endpoints } from 'src/utils/axios';
 
-import { AuthContext } from './auth-context';
 import { setSession } from './utils';
+import api from '../../../config/api';
+import { AuthContext } from './auth-context';
 
 
 const initialState = {

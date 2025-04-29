@@ -6,7 +6,6 @@ import Popover from '@mui/material/Popover';
 
 import { usePathname } from 'src/routes/hooks';
 
-
 import NavItem from './nav-item';
 
 export default function NavList({ data, depth, slotProps }) {
@@ -55,8 +54,6 @@ export default function NavList({ data, depth, slotProps }) {
         hasChild={!!data.children}
         externalLink={data.path.includes('http')}
         currentRole={slotProps?.currentRole}
-
-        className={'active'}
         sx={depth === 1 ? slotProps?.rootItem : slotProps?.subItem}
       />
 

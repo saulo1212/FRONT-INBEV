@@ -7,9 +7,9 @@ import Drawer from '@mui/material/Drawer';
 
 import { usePathname } from 'src/routes/hooks';
 
-import { useAuthContext } from 'src/auth/hooks';
-
 import { useResponsive } from 'src/hooks/use-responsive';
+
+import { useAuthContext } from 'src/auth/hooks';
 
 import Logo from 'src/components/logo';
 import Scrollbar from 'src/components/scrollbar';
@@ -46,7 +46,7 @@ export default function NavVertical({ openNav, onCloseNav }) {
         },
       }}
     >
-      <Logo sx={{ mt: 3, ml: 4, mb: 1, width: '50%' }} logoSrc={''} />
+      <Logo sx={{ mt: 3, ml: 4, mb: 1, width: '50%' }} logoSrc='' />
 
       <NavSectionVertical
         data={navData}

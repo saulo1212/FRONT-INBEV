@@ -1,13 +1,16 @@
 'use client';
 
 import PropTypes from 'prop-types';
-import { Alert } from 'src/utils/alert';
 import { useRef, useState } from 'react';
-import { useAuthContext } from 'src/auth/hooks';
-import { apiFecthPost } from 'src/utils/requests';
 
 import { Button, CircularProgress } from '@mui/material';
-import { Container, ContainerButton, Form, Image } from './styles';
+
+import { Alert } from 'src/utils/alert';
+import { apiFecthPost } from 'src/utils/requests';
+
+import { useAuthContext } from 'src/auth/hooks';
+
+import { Form, Image, Container, ContainerButton } from './styles';
 
 export default function DragAndDrop({ defaultImage, handleClose, selectedId, profile = false }) {
   const { updateLogo } = useAuthContext();

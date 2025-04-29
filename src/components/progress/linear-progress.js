@@ -1,5 +1,6 @@
-import { Container } from './styles';
 import { LinearProgress } from '@mui/material';
+
+import { Container } from './styles';
 
 export default function Progress() {
   return (

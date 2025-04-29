@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
-
 import CircularProgress from '@mui/material/CircularProgress';
+import { Button, Dialog, DialogTitle, DialogActions, DialogContent } from '@mui/material';
 
 export default function Modal({
   open,

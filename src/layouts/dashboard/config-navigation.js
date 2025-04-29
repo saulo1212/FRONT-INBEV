@@ -1,10 +1,8 @@
 import { useMemo } from 'react';
 
-import { paths } from 'src/routes/paths';
+import { useAuthContext } from 'src/auth/hooks';
 
 import SvgColor from 'src/components/svg-color';
-
-import { useAuthContext } from 'src/auth/hooks';
 
 // ----------------------------------------------------------------------
 
@@ -47,24 +45,6 @@ const ICONS = {
   dashboard: icon('ic_dashboard'),
 };
 
-// ----------------------------------------------------------------------
-function getPath(path, subheader) {
-  const keys = path.split('.');
-  let schema = paths[subheader];
-  let keyValue = null;
-
-  for (let i = 0; i < keys.length; i++) {
-    let elem = keys[i];
-
-    if (keyValue) {
-      keyValue = keyValue[elem];
-    } else {
-      keyValue = schema[elem];
-    }
-  }
-
-  return keyValue;
-}
 
 export function useNavData() {
   const { user } = useAuthContext();

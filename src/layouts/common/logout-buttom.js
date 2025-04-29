@@ -24,8 +24,7 @@ export default function LogoutButtom() {
   };
 
   return (
-    <>
-      <IconButton
+    <IconButton
         component={m.button}
         whileTap="tap"
         whileHover="hover"
@@ -38,6 +37,5 @@ export default function LogoutButtom() {
       >
         <Iconify icon="solar:logout-2-bold-duotone" width={24} />
       </IconButton>
-    </>
   );
 }

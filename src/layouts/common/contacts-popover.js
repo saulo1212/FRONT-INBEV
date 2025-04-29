@@ -7,8 +7,6 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ListItemText from '@mui/material/ListItemText';
 
-import { fToNow } from 'src/utils/format-time';
-
 import { _contacts } from 'src/_mock';
 
 import Iconify from 'src/components/iconify';
@@ -57,7 +55,7 @@ export default function ContactsPopover() {
 
               <ListItemText
                 primary={contact.name}
-                secondary={contact.status === 'offline' ? fToNow(contact.lastActivity) : ''}
+                secondary='offline'
                 primaryTypographyProps={{ typography: 'subtitle2' }}
                 secondaryTypographyProps={{
                   typography: 'caption',

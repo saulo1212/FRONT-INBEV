@@ -1,15 +1,13 @@
 'use client';
 
 import 'leaflet/dist/leaflet.css';
-import 'leaflet-defaulticon-compatibility';
-import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
-
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+import 'leaflet-defaulticon-compatibility';
+import { Popup, Marker, TileLayer, MapContainer } from 'react-leaflet';
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 
 import UseMap from './use-map';
 import PopUpCard from './popup-card';
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 
 export default function LeafletMap({ positions, selectedPosition = null }) {
   const centerPosition = [-13.6632305, -69.6410913];

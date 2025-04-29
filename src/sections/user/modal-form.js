@@ -2,13 +2,16 @@
 
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
-import { ClickEdit } from 'src/utils/fetch-by-id';
-import {apiFetchGet, apiFetchPut, apiFecthPost} from '../../utils/requests'
-import { schema, schemaUpdate } from './validation-schema';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import Form from './form';
-import Modal from 'src/components/modal/modal';
+
 import {Alert} from 'src/utils/alert'
+import { ClickEdit } from 'src/utils/fetch-by-id';
+
+import Modal from 'src/components/modal/modal';
+
+import Form from './form';
+import { schema, schemaUpdate } from './validation-schema';
+import {apiFetchGet, apiFetchPut, apiFecthPost} from '../../utils/requests'
 
 const fetchUserById = async (id) => {
   if (!id) throw new Error('ID não fornecido');
